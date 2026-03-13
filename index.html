@@ -23,10 +23,10 @@
     </div>
 
     <nav id="menu">
-        <div class="menu-toggle" id="hamburger">
-            <i class="fas fa-bars"></i> <!-- hamburger icon -->
+        <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i> <!-- hamburger icon -->
         </div>
-        <ul>
+        <ul id="nav-links">
             <li><a href="index.html" >Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="products.html">Harvest</a></li>
@@ -76,10 +76,11 @@
                     <a  href="about-us.html" class="btn secondary">Our Story</a>
                 </div>
 
-                <div class="down-arrow">
+                
+            </div>
+            <div class="down-arrow">
                     ↓
                 </div>
-            </div>
         </div>
 
         <!-- Mission -->
@@ -91,21 +92,21 @@
             
                 <div class="product-category organic" >
                     <i class="fas fa-leaf fa-2x"></i>         <!-- organic -->
-                    <h1>100% Organic</h1>
+                    <h2>100% Organic</h2>
                     <p>Grown naturally without harmful chemicals, ensuring pure nutrition for your family.</p>
 
                 </div>
 
                 <div class="product-category local">
                     <i class="fas fa-map-marker-alt fa-2x"></i> <!-- local -->
-                    <h1>Locally Grown</h1>
+                    <h2>Locally Grown</h2>
                     <p>Rooted in Thohoyandou soil, supporting local agriculture and community.</p>
 
                 </div>
 
                 <div class="product-category harvest">
                     <i class="fas fa-carrot fa-2x"></i>        <!-- fresh harvest -->
-                    <h1>Fresh Harvest</h1>
+                    <h2>Fresh Harvest</h2>
                     <p>Picked at the peak of ripeness and delivered fresh to maintain maximum flavour.</p>
 
                 </div>
@@ -156,13 +157,19 @@
                     <a href="products.html"> </a>-->
                 </div>
            </div> 
+           <div class="mobile-products-view">
+                <a href="products.html">
+                    View All Products
+                    <i class="fas fa-arrow-right"></i>
+                 </a>
+           </div>
            </div>
         </div>
            
         <!--Process-->
         <section class="process">
-            <small>OUR PROCESS</small>
-            <h1>Seed to Table Journey</h1>
+            <h3>OUR PROCESS</h3>
+            <h2>Seed to Table Journey</h2>
 
             <div class="steps">
 
@@ -297,19 +304,27 @@
 
         <div id="footer-contact">
             <h2>Contact Us</h2>
-            <p> <i class="fas fa-map-marker-alt"></i>Thohoyandou,Limpopo</p>
-            <p> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></p>
-            <p><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></p>
+            <ul>
+            
+                <li><i class="fas fa-map-marker-alt"></i>Thohoyandou, Limpopo</li>
+                <li> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></li>
+            </ul>
         </div>
 
         <div id="footer-social">
             <h2>Follow Us</h2>
             
-            <p><a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a></p>
-            <p> <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a></p>
-            <p><a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a></p>
+            <div class="social-icons">  
+                 <a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a>
             
+            </div>
+           
         </div>
+
+    </div>
 
   
         

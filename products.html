@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Pfunzo's Garden | Home </title>
+    <title>Our Harvest | Pfunzo's Garden  </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -24,7 +24,10 @@
     </div>
 
     <nav id="menu">
-        <ul>
+        <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i> <!-- hamburger icon -->
+        </div>
+        <ul id="nav-links">
             <li><a href="index.html" >Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="products.html">Harvest</a></li>
@@ -51,11 +54,11 @@
             </div>
 
             <div class="filter-buttons">
-            <button class="active">All</button>
-            <button>Vegetable</button>
-            <button>Fruit</button>
-            <button>Herb</button>
-            <button>Seedlings</button>
+                <button class="active">All</button>
+                <button>Vegetable</button>
+                <button>Fruit</button>
+                <button>Herb</button>
+                <button>Seedlings</button>
             </div>
         </div>
 
@@ -313,20 +316,29 @@
             </ul>
         </div>
 
+      
+
         <div id="footer-contact">
             <h2>Contact Us</h2>
-            <p> <i class="fas fa-map-marker-alt"></i>Thohoyandou,Limpopo</p>
-            <p> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></p>
-            <p><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></p>
+            <ul>
+            
+                <li><i class="fas fa-map-marker-alt"></i>Thohoyandou, Limpopo</li>
+                <li> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></li>
+            </ul>
         </div>
 
+       
         <div id="footer-social">
             <h2>Follow Us</h2>
             
-            <p><a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a></p>
-            <p> <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a></p>
-            <p><a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a></p>
+            <div class="social-icons">  
+                 <a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a>
             
+            </div>
+           
         </div>
 
   
