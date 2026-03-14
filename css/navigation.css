@@ -124,7 +124,7 @@ nav ul{
 
 
 /* Hide menu toggle on desktop */
-.menu-toggle {
+.mobile-icons {
     display: none;
     
 }
@@ -136,7 +136,11 @@ nav ul{
 ==================== */
 @media screen and (max-width:768px){
 
-.menu-toggle{
+.cart-icon{
+    display: none;
+}
+
+.mobile-icons{
     display:block;
 }
 
@@ -157,4 +161,14 @@ nav ul{
     display:flex;
 }
 
+.mobile-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.mobile-cart{
+    font-size:15px;
+    cursor:pointer;
+}
 }
