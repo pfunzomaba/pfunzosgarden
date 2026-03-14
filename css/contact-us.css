@@ -46,7 +46,7 @@
 
 .card h2 {
   margin-bottom: 30px;
-  /*font-size: 26px;*/
+  font-size: 26px;
   color: #6ca441
 }
 
@@ -129,7 +129,11 @@ textarea {
   height: 120px;
 }
 
-button {
+.form-container button:hover {
+  background: #65b12f;
+}
+
+.form-container button {
   width: 100%;
   padding: 15px;
   border-radius: 30px;
@@ -140,10 +144,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-button:hover {
-  background: #5a8c37;
 }
 
 /* Responsive */
