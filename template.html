@@ -14,6 +14,7 @@
 
 <body>
 
+
 <header>
     <div class="logo-area">
         <a href="index.html">
@@ -24,23 +25,39 @@
     </div>
 
     <nav id="menu">
-            <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
-                <i class="fas fa-bars" id="menu-icon"></i> <!-- hamburger icon -->
-            </div>
-            <ul id="nav-links">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Harvest</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-                <li class="fas fa-shopping-cart"></li>
-                <li>
-                    <a href="products.html">
-                        <button class="btn">Shop Now</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+       
+        <ul id="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Harvest</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+            </li>
+            <li>
+                <a href="products.html">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </li>
+
+            
+        </ul>
+
+        <div class="mobile-icons">
+
+                <div class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                 <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i> <!-- hamburger icon -->
+                </div>
+
+         </div>
+    </nav>
 </header>
+
+   
 
    
 
