@@ -1,9 +1,15 @@
-// js/menu.js
 function toggleMenu() {
-    var x = document.getElementById("menu");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+
+    const menu = document.getElementById("nav-links");
+    const icon = document.getElementById("menu-icon");
+
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times"); // cross icon
     } else {
-        x.className = "topnav";
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars"); // hamburger again
     }
 }
