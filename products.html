@@ -32,7 +32,10 @@
             <li><a href="products.html">Harvest</a></li>
             <li><a href="contact-us.html">Contact</a></li>
             <li class="cart-icon">
+                <a href="cart.html">
                     <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
             </li>
             <li>
                 <a href="products.html">
@@ -71,159 +74,252 @@
             </div>
 
             <div class="filter-buttons">
-                <button class="active">All</button>
-                <button>Vegetable</button>
-                <button>Fruit</button>
-                <button>Herb</button>
-                <button>Seedlings</button>
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="vegetable">Vegetables</button>
+                <button data-filter="fruit">Fruits</button>
+                <button data-filter="herb">Herbs</button>
+                <button data-filter="seedlings">Seedlings</button>
             </div>
         </div>
 
         <div class="produce-grid">
 
             <!-- Card 1 -->
-            <div class="produce-card">
+            <div class="produce-card vegetable">
                 <div class="produce-image">
                     <img src="assets/images/cabbage.jpg" alt="Cabbage">
                     <span class="tag">Vegetable</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Cabbage</h3>
+                     <div class="product-header">
+                        <h3>Cabbage</h3>
+                        <span class="price">R25/kg</span>
+                    </div>
+                
                     <p>Fresh, crisp cabbage grown with care in our garden.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add </button>
+                    
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">12 kg left</span>
+                    </div>
+                   
+                    <div class="cart-section">
+
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="plus">+</button>
+                    </div>
+
+                    <button class="basket-btn">
+                        Add to Cart
+                    </button>
+
                     </div>
                 </div>
             </div>
 
+            
+
             <!-- Card 2 -->
-            <div class="produce-card">
+            <div class="produce-card fruit">
                 <div class="produce-image">
-                    <img src="assets/images/fruits.jpg" alt="Fruits">
+                    <img src="assets/images/naartjies.jpg" alt="Fruits">
                     <span class="tag">Fruit</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Fruits</h3>
+                    <div class="product-header">
+                        <h3>Naartjies</h3>
+                        <span class="price">R20/kg</span>
+                    </div>
                     <p>A variety of sweet and healthy fruits from our trees.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add </button>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">10 kg left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="produce-card">
+            <div class="produce-card herb">
                 <div class="produce-image">
                     <img src="assets/images/coriander.jpg" alt="Coriander">
                     <span class="tag">Herb</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Coriander</h3>
+                    <div class="product-header">
+                        <h3>Coriander</h3>
+                        <span class="price">R15/bunch</span>
+                    </div>
                     <p>Fragrant coriander (dhania) to spice up your cooking.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add</button>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">8 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="produce-card">
+            <div class="produce-card vegetable">
                 <div class="produce-image">
                     <img src="assets/images/mixed-veg.jpg" alt="Mixed Vegetables">
                     <span class="tag">Vegetable</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Mixed Vegetables</h3>
+                    <div class="product-header">
+                        <h3>Mixed Veg</h3>
+                        <span class="price">R30/box</span>
+                    </div>
                     <p>A seasonal selection of our best garden vegetables.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add </button>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">5 boxes left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!--Card 5-->
-            <div class="produce-card">
+            <div class="produce-card vegetable">
                 <div class="produce-image">
                     <img src="assets/images/spinach.jpg" alt="Spinach">
                     <span class="tag">Vegetable</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Spinach</h3>
-                    <p>Nutritious spinach leaves, perfect for salads and cooking.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add </button>
+                    <div class="product-header">
+                        <h3>Spinach</h3>
+                        <span class="price">R20/bunch</span>
+                    </div>
+                    <p>Nutritious spinach, perfect for salads and cooking.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">7 bunches left</span>
                     </div>
 
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
 
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
             </div> 
             
             <!--Card 6-->
-            <div class="produce-card">
+            <div class="produce-card seedlings">
                 <div class="produce-image">
                     <img src="assets/images/seedlings.jpg" alt="Seedlings">
                     <span class="tag">Seedlings</span>
                 </div>
 
                 <div class="produce-content">
-                    <h3>Seedlings</h3>
+                    <div class="product-header">
+                        <h3>Seedlings</h3>
+                        <span class="price">R25/pack</span>
+                    </div>
                     <p>Healthy seedlings ready to be planted in your own garden.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add </button>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">4 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
             
             <!--Card 7-->
-            <!--<div class="produce-card">
-                <div class="spinach">
-                    <img src="assets/images/seedlings.jpg" alt="Spinach Seedling">
-                    <span class="tag">Vegetable Seedling</span>
-                </div>
-
-                <div class="produce-content">
-                    <h3>Spinach Seedling</h3>
-                    <p>Young spinach plants ready to grow into fresh, nutrient-rich leafy greens.</p>
-
-                    <div class="card-footer">
-                        <span class="fresh">Ready for Planting</span>
-                        <button class="basket-btn">+ Add to Basket</button>
-                    </div>
-                </div>
-            </div>-->
+            
             
             
             <!--Card 8-->
-            <div class="produce-card">
+            <div class="produce-card vegetable">
                 <div class="produce-image">
                     <img src="assets/images/mustard.jpg" alt="Green Mustard">
                     <span class="tag">Vegetable</span>
                 </div>
                 
                 <div class="produce-content">
-                    <h3>Mustard Greens</h3>
-                    <p>Spicy mustard greens, perfect for sautéing and soups.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add</button>
+                    <div class="product-header">
+                        <h3>Mustard</h3>
+                        <span class="price">R18/bunch</span>
+                    </div>
+                    <p>Spicy mustard greens, perfect with pap.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">6 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
                 
@@ -231,90 +327,630 @@
             
             
             <!--Card 9-->
-            <div class="produce-card">
+            <div class="produce-card vegetable">
                 <div class="produce-image">
                     <img src="assets/images/green-pepper.jpg" alt="Green Pepper">
                     <span class="tag">Vegetable</span>
                 </div>
                 
                 <div class="produce-content">
-                    <h3>Green Peppers</h3>
+                    <div class="product-header">
+                        <h3>Green Peppers</h3>
+                        <span class="price">R22/kg</span>
+                    </div>
                     <p>Crisp green peppers, great for salads and cooking.</p>
-                    <br>
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add</button>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">9 kg left</span>
                     </div>
 
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
                 
             </div>
             
             
             <!--Card 10-->
-            <!--<div class="produce-card">
+            <div class="produce-card fruit">
                 <div class="produce-image">
-                    <img src="assets/images/Avocado.jpg" alt="Avocados">
-                    <span class="tag">Vegetable</span>
+                    <img src="assets/images/avodaco.jpg" alt="Avocados">
+                    <span class="tag">Fruit</span>
                 </div>
                 
                 <div class="produce-content">
-                    <h3>Avocados</h3>
+                    <div class="product-header">
+                        <h3>Avocados</h3>
+                        <span class="price">R30/kg</span>
+                    </div>
                     <p>Creamy avocados, perfect for guacamole and salads.</p>
 
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add to Basket</button>
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">5 kg left</span>
                     </div>
 
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
-            </div> -->
+            </div> 
             
             <!--Card 11-->
-            <!--<div class="produce-card">
+            <div class="produce-card fruit">
                 
                 <div class="produce-image">
-                    <img src="assets/images/mango.jpg" alt="magoes">
-                    <span class="tag">Vegetable</span>
+                    <img src="assets/images/papaya.jpeg" alt="magoes">
+                    <span class="tag">Fruit</span>
                 </div>
                 
                 <div class="produce-content">
-                    <h3>Mangoes</h3>
-                    <p>Sweet and juicy mangoes, a tropical delight.</p>
+                    <div class="product-header">
+                        <h3>Papaya</h3>
+                        <span class="price">R35/kg</span>
+                    </div>
+                    <p>Sweet and juicy papaya, a tropical delight.</p>
 
-                    <div class="card-footer">
-                        <span class="fresh">Fresh from Garden</span>
-                        <button class="basket-btn">+ Add to Basket</button>
+                    <div class="stock-info">
+                       <span class="availability out-stock">
+                            Out of Stock
+                        </span>
+                    </div>
+                    
+
+                    <div class="cart-section">
+                        <div class="quantity-box disabled">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn sold-out-btn" disabled>
+                            Sold Out
+                        </button>
                     </div>
                 </div>
-            </div>  -->
+            </div>  
             
             
             <!--Card 12-->
-            <!--<div class="produce-card">
+            <div class="produce-card herb">
+                <div class="produce-image">
+                    <img src="assets/images/basil.jpg" alt="Basil">
+                    <span class="tag">Herb</span>
+                </div>
+                
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Basil</h3>
+                        <span class="price">R15/bunch</span>
+                    </div>
+                    <p>Fresh basil leaves, perfect for Italian dishes and pesto.</p>
 
-                <div class="product-image">
-                    <img src="assets/images/watermelon.jpeg" alt="watermelon">
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">10 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 13-->
+            <div class="produce-card vegetable">
+                <div class="produce-image">
+                    <img src="assets/images/beetroot.jpeg" alt="Beetroot">
+                    <span class="tag">Vegetable</span>
+                </div>
+                
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Beetroot</h3>
+                        <span class="price">R28/kg</span>
+                    </div>
+                    <p>Crisp and fresh beetroot, perfect for salads</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">15 kg left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 14-->
+            <div class="produce-card herb">
+                <div class="produce-image">
+                    <img src="assets/images/dill.jpg" alt="Dill">
+                    <span class="tag">Herb</span>
+                </div>
+                
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Dill</h3>
+                        <span class="price">R10/bunch</span>
+                    </div>
+                    <p>Fresh dill perfect for salads</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">6 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 15-->
+            <div class="produce-card herb">
+                <div class="produce-image">
+                    <img src="assets/images/borage.jpg" alt="Borage">
+                    <span class="tag">Herb</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Borage</h3>
+                        <span class="price">R20/bunch</span>
+                    </div>
+                    <p>Fresh borage perfect for salads</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">6 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+
+                        <button class="basket-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 16-->
+            <div class="produce-card fruit">
+                <div class="produce-image">
+                    <img src="assets/images/apples.jpeg" alt="Apples">
                     <span class="tag">Fruit</span>
                 </div>
-
                 <div class="produce-content">
-                    <h3>Watermelon</h3>
-                    <p></p>
+                    <div class="product-header">
+                        <h3>Apples</h3>
+                        <span class="price">R18/kg</span>
+                    </div>
+                    <p>Sweet, crisp apples perfect for snacks and desserts.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">12 kg left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
                 </div>
-            </div>-->
+            </div>
 
+            <!--Card 17-->
+            <div class="produce-card fruit">
+                <div class="produce-image">
+                    <img src="assets/images/banana.jpg" alt="Bananas">
+                    <span class="tag">Fruit</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Bananas</h3>
+                        <span class="price">R12/kg</span>
+                    </div>
+                    <p>Ripe bananas ready for smoothies, breakfast, and baking.</p>
 
-    </div>      
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">14 kg left</span>
+                    </div>
 
-            
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 18-->
+            <div class="produce-card vegetable">
+                <div class="produce-image">
+                    <img src="assets/images/corn.jpg" alt="Sweet Corn">
+                    <span class="tag">Vegetable</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Corn</h3>
+                        <span class="price">R16/each</span>
+                    </div>
+                    <p>Fresh corn on the cob, picked at peak sweetness.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">8 ears left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 19-->
+            <div class="produce-card vegetable">
+                <div class="produce-image">
+                    <img src="assets/images/egg-plant.jpg" alt="Eggplant">
+                    <span class="tag">Vegetable</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Eggplant</h3>
+                        <span class="price">R22/kg</span>
+                    </div>
+                    <p>Glossy eggplants great for roasting and stews.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">7 kg left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 20-->
+            <div class="produce-card vegetable">
+                <div class="produce-image">
+                    <img src="assets/images/kale.jpg" alt="Kale">
+                    <span class="tag">Vegetable</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Kale</h3>
+                        <span class="price">R18/bunch</span>
+                    </div>
+                    <p>Healthy kale leaves full of vitamins for salads and soups.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">9 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 21-->
+            <div class="produce-card herb">
+                <div class="produce-image">
+                    <img src="assets/images/parsley.jpg" alt="Parsley">
+                    <span class="tag">Herb</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Parsley</h3>
+                        <span class="price">R12/bunch</span>
+                    </div>
+                    <p>Fresh parsley for garnishes, sauces, and stews.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">11 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 22-->
+            <div class="produce-card herb">
+                <div class="produce-image">
+                    <img src="assets/images/rocket.jpg" alt="Rocket">
+                    <span class="tag">Herb</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Rocket</h3>
+                        <span class="price">R14/bunch</span>
+                    </div>
+                    <p>Peppery rocket leaves that add bite to salads and pizzas.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">8 bunches left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 23-->
+            <div class="produce-card fruit">
+                <div class="produce-image">
+                    <img src="assets/images/watermelon.jpeg" alt="Watermelon">
+                    <span class="tag">Fruit</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Watermelon</h3>
+                        <span class="price">R28/each</span>
+                    </div>
+                    <p>Juicy watermelon slices for refreshment on warm days.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">3 melons left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 24-->
+            <div class="produce-card seedlings">
+                <div class="produce-image">
+                    <img src="assets/images/basil-seedling.jpg" alt="Basil Seedlings">
+                    <span class="tag">Seedlings</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Basil</h3>
+                        <span class="price">R20/pack</span>
+                    </div>
+                    <p>Young basil seedlings ready to grow in your garden.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">6 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 25-->
+            <div class="produce-card seedlings">
+                <div class="produce-image">
+                    <img src="assets/images/beetroot-seedling.jpeg" alt="Beetroot Seedlings">
+                    <span class="tag">Seedlings</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Beetroot</h3>
+                        <span class="price">R22/pack</span>
+                    </div>
+                    <p>Healthy beetroot seedlings for a vibrant garden bed.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">5 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 26-->
+            <div class="produce-card seedlings">
+                <div class="produce-image">
+                    <img src="assets/images/eggplant-seedling.jpeg" alt="Eggplant Seedlings">
+                    <span class="tag">Seedlings</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Eggplant</h3>
+                        <span class="price">R24/pack</span>
+                    </div>
+                    <p>Strong eggplant seedlings for your next planting season.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">4 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 27-->
+            <div class="produce-card seedlings">
+                <div class="produce-image">
+                    <img src="assets/images/Spinach-seedling.jpeg" alt="Spinach Seedlings">
+                    <span class="tag">Seedlings</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Spinach</h3>
+                        <span class="price">R18/pack</span>
+                    </div>
+                    <p>Fresh spinach seedlings ready for quick planting.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">7 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 28-->
+            <div class="produce-card seedlings">
+                <div class="produce-image">
+                    <img src="assets/images/dill-seddling.jpg" alt="Dill Seedlings">
+                    <span class="tag">Seedlings</span>
+                </div>
+                <div class="produce-content">
+                    <div class="product-header">
+                        <h3>Dill</h3>
+                        <span class="price">R16/pack</span>
+                    </div>
+                    <p>Fragrant dill seedlings for herb gardens and pots.</p>
+
+                    <div class="stock-info">
+                        <span class="availability">In Stock</span>
+                        <span class="quantity-left">6 packs left</span>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="quantity-box">
+                            <button class="minus">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <button class="basket-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more-container">
+            <button id="load-more-btn">Load More</button>
+        </div>
         </section>
+
+        
 
 </main>
 
     <footer >
         <div id="footer-logo">
-            <!-- row with logo and title -->
             <div class="logo-row">
                 <a href="index.html"><img src="assets/images/logo.png" alt="Pfunzo's Garden logo: fresh spinach leaves in a purple bucket, representing organic farming and natural produce from Thohoyandou"></a>
                 <h1>Pfunzo's Garden</h1>
@@ -362,6 +998,133 @@
         
         
     </footer>
-    <script src="scripts/navigation.js"></script>
+
+  <script src="scripts/navigation.js"></script>
+  <script>
+        const filterButtons = document.querySelectorAll(".filter-buttons button");
+        const productCards = document.querySelectorAll(".produce-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                const filter = button.getAttribute("data-filter");
+
+                productCards.forEach(card => {
+                    if (filter === "all") {
+                        card.style.display = "block";
+                    } else if (card.classList.contains(filter)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // Quantity adjustment
+        const plusButtons = document.querySelectorAll(".plus");
+        const minusButtons = document.querySelectorAll(".minus");
+
+
+        plusButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                const quantitySpan =
+                    button.parentElement.querySelector(".quantity");
+
+                let quantity = Number(quantitySpan.textContent);
+
+                quantity++;
+
+                quantitySpan.textContent = quantity;
+            });
+        });
+
+
+        minusButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                const quantitySpan =
+                    button.parentElement.querySelector(".quantity");
+
+                let quantity = Number(quantitySpan.textContent);
+
+                if(quantity > 1){
+                    quantity--;
+                }
+
+                quantitySpan.textContent = quantity;
+            });
+        });
+
+
+        // Load existing cart from localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartCounter = document.getElementById("cart-count");
+
+        const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCounter.textContent = cartCount;
+
+        const addButtons = document.querySelectorAll(".basket-btn");
+
+        addButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const card = button.closest(".produce-card");
+                const productName = card.querySelector("h3").textContent;
+                const productPrice = card.querySelector(".price").textContent;
+                const quantity = Number(card.querySelector(".quantity").textContent);
+
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({
+                        name: productName,
+                        price: productPrice,
+                        quantity: quantity
+                    });
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                const newCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartCounter.textContent = newCount;
+            });
+        });
+
+        // Load More functionality
+        const products = document.querySelectorAll(".produce-card");
+        const loadMoreBtn = document.getElementById("load-more-btn");
+
+        let currentItems = 8;
+
+        // Show the first 8 products
+        products.forEach((product, index) => {
+            if(index >= currentItems){
+                product.style.display = "none";
+            }
+        });
+
+        loadMoreBtn.addEventListener("click", () => {
+
+    currentItems += 8;
+
+    products.forEach((product, index) => {
+
+        if(index < currentItems){
+            product.style.display = "block";
+        }
+
+    });
+
+    // Hide button when all products are visible
+    if(currentItems >= products.length){
+        loadMoreBtn.style.display = "none";
+    }
+
+});
+</script>
+
 </body>
 </html>
