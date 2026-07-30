@@ -89,7 +89,7 @@ Each product card includes:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/pfunzos-garden.git
+git clone https://github.com/pfunzomaba/pfunzos-garden.git
 ```
 
 2. Open the project folder.
