@@ -1,13 +1,11 @@
 
 # Pfunzo's Garden
 
-## Description
-
 Pfunzo's Garden is a responsive and modern gardening website designed to showcase fresh, organically grown produce. The website allows customers to browse products by category, view product availability and pricing, add items to a shopping cart, and enjoy a seamless shopping experience across desktop, tablet, and mobile devices.
 
 Our mission is to cultivate healthy communities by providing fresh, high-quality produce grown with care.
 
----
+
 
 ## Features
 
@@ -36,7 +34,7 @@ Our mission is to cultivate healthy communities by providing fresh, high-quality
 - Modern and clean user interface.
 - Hover effects and interactive elements.
 
----
+
 
 ## Technologies Used
 
@@ -45,7 +43,7 @@ Our mission is to cultivate healthy communities by providing fresh, high-quality
 - JavaScript (DOM Manipulation & Cart Functionality)
 - Font Awesome (Icons)
 
----
+
 
 ## Pages
 
@@ -82,7 +80,7 @@ Each product card includes:
 - Add to Cart button
 - Sold Out button for unavailable products
 
----
+
 
 ## Installation
 
@@ -98,7 +96,7 @@ git clone https://github.com/pfunzomaba/pfunzos-garden.git
 
 No additional installation or dependencies are required.
 
----
+
 
 ## Future Improvements
 
