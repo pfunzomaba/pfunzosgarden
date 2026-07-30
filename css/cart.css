@@ -1,0 +1,147 @@
+body {
+    background: #f6f6f2;
+}
+
+main {
+    max-width: 1100px;
+    margin: 120px auto 80px;
+    padding: 0 20px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #2e4a35;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cart-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(94, 154, 58, 0.12);
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(94, 154, 58, 0.12);
+    color: #4a4a4a;
+}
+
+.cart-table th {
+    background: #f6f6f2;
+    color: #2e4a35;
+    font-weight: 700;
+    font-size: 0.98rem;
+}
+
+.cart-table td:last-child,
+.cart-table th:last-child {
+    text-align: right;
+}
+
+.cart-table tr:last-child td {
+    border-bottom: none;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 30px 10px;
+    color: #777;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #4a4a4a;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.summary-line.total-line {
+    font-weight: 700;
+    color: #2e4a35;
+    font-size: 1.1rem;
+    border-top: 1px solid rgba(94, 154, 58, 0.12);
+    padding-top: 12px;
+    margin-top: 10px;
+}
+
+.summary-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.cart-summary {
+    background: white;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(94, 154, 58, 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.cart-summary h3 {
+    margin: 0;
+    color: #2e4a35;
+    font-size: 1.6rem;
+}
+
+.cart-summary button {
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cart-summary button:first-of-type {
+    background: transparent;
+    color: #5fa43a;
+    border: 2px solid #5fa43a;
+}
+
+.cart-summary button:last-of-type {
+    background: #5fa43a;
+    color: white;
+}
+
+.cart-summary button:hover {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 30px auto 60px;
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cart-summary button {
+        width: 100%;
+    }
+}
